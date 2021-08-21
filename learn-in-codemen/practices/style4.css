@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* PRODUCT */
+.product {
+  border: 4px solid black;
+  width: 825px;
+  /* top and bottom left and right auto */
+  margin: 50px auto;
+  position: relative;
+}
+
+/*PRODUCT TITLE */
+.product-title {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(185, 185, 185);
+}
+
+/* FREE SHIPPING */
+.free-shipping {
+  color: rgb(129, 140, 150);
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  text-transform: uppercase;
+}
+
+/* ADD TO CART */
+.add-to-cart {
+  background-color: black;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-top: 4px solid rgb(0, 0, 0);
+}
+
+/* MORE INFO */
+.more-info:link,
+.more-info:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.sale {
+  background-color: rgb(250, 0, 0);
+  text-transform: uppercase;
+  color: cornsilk;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: 7px 15px;
+  /* width: 40px;
+  text-align: center; */
+  position: absolute;
+  top: -17px;
+  left: -34px;
+  letter-spacing: 5px;
+}
+
+.color {
+  background-color: black;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-blue {
+  background-color: rgb(39, 18, 230);
+  height: 22px;
+  width: 22px;
+}
+
+.color-red {
+  background-color: red;
+  height: 22px;
+  width: 22px;
+}
+
+.color-yellow {
+  background-color: yellow;
+  height: 22px;
+  width: 22px;
+}
+.color-brown {
+  background-color: brown;
+  height: 22px;
+  width: 22px;
+}
