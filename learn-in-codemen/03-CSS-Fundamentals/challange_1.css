@@ -1,0 +1,53 @@
+body {
+  border: rgb(1, 63, 1) 5px solid;
+}
+h2 {
+  background-color: rgb(189, 186, 186);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.shipping {
+  color: gray;
+}
+
+.info {
+  font-size: 20px;
+}
+
+ul li {
+  font-family: sans-serif;
+}
+
+img {
+  width: 320px;
+  height: 320px;
+}
+
+button {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+more-info :link,
+more-info:visited {
+  color: #000;
+  font-size: 20px;
+}
+
+more-info :hover {
+  text-decoration: none;
+}
