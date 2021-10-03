@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="flex-css.css" />
+    <title>Document</title>
+    <style>
+      .container {
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 40px;
+        display: flex;
+        background-color: darkgray;
+      }
+
+      .container2 {
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 40px;
+        display: flex;
+        background-color: darkgray;
+        align-items: center;
+      }
+
+      .container3 {
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 40px;
+        display: flex;
+        background-color: darkgray;
+        align-items: flex-start;
+      }
+      .container4 {
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 40px;
+        display: flex;
+        background-color: darkgray;
+        align-items: stretch;
+      }
+
+      .container5 {
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 40px;
+        display: flex;
+        background-color: darkgray;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container6 {
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 40px;
+        display: flex;
+        background-color: darkgray;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .el--1 {
+        background-color: red;
+      }
+      .el--2 {
+        background-color: blue;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: orange;
+      }
+      .el--5 {
+        background-color: darkblue;
+      }
+      .el--6 {
+        background-color: darkturquoise;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: tomato;
+      }
+
+      .el--12 {
+        background-color: red;
+      }
+      .el--22 {
+        background-color: blue;
+      }
+      .el--32 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--42 {
+        background-color: orange;
+      }
+      .el--52 {
+        background-color: darkblue;
+      }
+      .el--62 {
+        background-color: darkturquoise;
+      }
+      .el--72 {
+        background-color: yellow;
+      }
+      .el--82 {
+        background-color: tomato;
+      }
+
+      .el--13 {
+        background-color: red;
+      }
+      .el--23 {
+        background-color: blue;
+      }
+      .el--33 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--43 {
+        background-color: orange;
+      }
+      .el--53 {
+        background-color: darkblue;
+      }
+      .el--63 {
+        background-color: darkturquoise;
+      }
+      .el--73 {
+        background-color: yellow;
+      }
+      .el--83 {
+        background-color: tomato;
+      }
+
+      .el--14 {
+        background-color: red;
+      }
+      .el--24 {
+        background-color: blue;
+      }
+      .el--34 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--44 {
+        background-color: orange;
+      }
+      .el--54 {
+        background-color: darkblue;
+      }
+      .el--64 {
+        background-color: darkturquoise;
+      }
+      .el--74 {
+        background-color: yellow;
+      }
+      .el--84 {
+        background-color: tomato;
+      }
+
+      .el--15 {
+        background-color: red;
+      }
+      .el--25 {
+        background-color: blue;
+      }
+      .el--35 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--45 {
+        background-color: orange;
+      }
+      .el--55 {
+        background-color: darkblue;
+      }
+      .el--65 {
+        background-color: darkturquoise;
+      }
+      .el--75 {
+        background-color: yellow;
+      }
+      .el--85 {
+        background-color: tomato;
+      }
+
+      .el--16 {
+        background-color: red;
+      }
+      .el--26 {
+        background-color: blue;
+      }
+      .el--36 {
+        background-color: green;
+      }
+      .el--46 {
+        background-color: orange;
+      }
+      .el--56 {
+        background-color: darkblue;
+      }
+      .el--66 {
+        background-color: darkturquoise;
+      }
+      .el--76 {
+        background-color: yellow;
+      }
+      .el--86 {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FLex ----> default</h1>
+    <div class="container">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">IS</div>
+      <div class="el el--3">Not</div>
+      <div class="el el--4">VERY</div>
+      <div class="el el--5">HARD</div>
+      <div class="el el--6">Language</div>
+      <div class="el el--7">Language</div>
+      <div class="el el--8">Language</div>
+    </div>
+
+    <h1>Flex ----> align-items:center</h1>
+    <div class="container2">
+      <div class="el el--12">HTML</div>
+      <div class="el el--22">IS</div>
+      <div class="el el--32">Not</div>
+      <div class="el el--42">VERY</div>
+      <div class="el el--52">HARD</div>
+      <div class="el el--62">Language</div>
+      <div class="el el--72">Language</div>
+      <div class="el el--82">Language</div>
+    </div>
+
+    <h1>Flex ----> align-items:flex-start</h1>
+    <div class="container3">
+      <div class="el el--13">HTML</div>
+      <div class="el el--23">IS</div>
+      <div class="el el--33">Not</div>
+      <div class="el el--43">VERY</div>
+      <div class="el el--53">HARD</div>
+      <div class="el el--63">Language</div>
+      <div class="el el--73">Language</div>
+      <div class="el el--83">Language</div>
+    </div>
+
+    <h1>Flex ----> align-items:stretch</h1>
+    <div class="container4">
+      <div class="el el--14">HTML</div>
+      <div class="el el--24">IS</div>
+      <div class="el el--34">Not</div>
+      <div class="el el--44">VERY</div>
+      <div class="el el--54">HARD</div>
+      <div class="el el--64">Language</div>
+      <div class="el el--74">Language</div>
+      <div class="el el--84">Language</div>
+    </div>
+
+    <h1>Flex ----> align-items:center justify-content:center</h1>
+    <div class="container5">
+      <div class="el el--15">HTML</div>
+      <div class="el el--25">IS</div>
+      <div class="el el--35">Not</div>
+      <div class="el el--45">VERY</div>
+      <div class="el el--55">HARD</div>
+      <div class="el el--65">Language</div>
+      <div class="el el--75">Language</div>
+      <div class="el el--85">Language</div>
+    </div>
+
+    <h1>Flex ----> align-items:center justify-content:space-between</h1>
+    <div class="container6">
+      <div class="el el--16">HTML</div>
+      <div class="el el--26">IS</div>
+      <div class="el el--36">Not</div>
+      <div class="el el--46">VERY</div>
+      <div class="el el--56">HARD</div>
+      <div class="el el--66">Language</div>
+      <div class="el el--76">Language</div>
+      <div class="el el--86">Language</div>
+    </div>
+  </body>
+</html>

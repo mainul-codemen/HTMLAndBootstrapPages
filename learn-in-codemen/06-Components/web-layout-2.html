@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mycss.css" />
+    <title>Web Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        height: 100vh;
+        grid-template-rows: 80px 1fr;
+      }
+      nav {
+        background-color: black;
+        color: #e9ecef;
+        grid-row: 1/-1;
+      }
+      section {
+        background-color: rgb(219, 219, 219);
+        overflow: scroll;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+      }
+      main {
+        background-color: blueviolet;
+      }
+      aside {
+        background-color: cadetblue;
+      }
+      menu {
+        background-color: #7048e8;
+        color: white;
+        grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
+      }
+      button {
+        display: inline-block;
+        font-size: 16px;
+        background-color: #5f3dc4;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        padding: 8px 12px;
+        font-weight: bold;
+      }
+      button:last-child {
+        background-color: red;
+        margin-left: auto;
+      }
+      .email {
+        background-color: rosybrown;
+        color: seashell;
+        font-size: 24px;
+        height: 96px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 40px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button class="btn">Create</button>
+      <button class="btn">Read</button>
+      <button class="btn">Write</button>
+      <button class="btn">Create</button>
+      <button class="btn">Trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+    </section>
+    <main></main>
+    <aside>Additional info</aside>
+  </body>
+</html>

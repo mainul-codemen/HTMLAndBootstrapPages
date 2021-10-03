@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mycss.css" />
+    <title>Web Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: black;
+        font-size: 24px;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+      }
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+
+      nav {
+        background-color: black;
+        color: #e9ecef;
+        grid-row: 1/-1;
+      }
+      menu {
+        background-color: #7048e8;
+        color: white;
+        grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
+      }
+      section {
+        background-color: #e9ecef;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        overflow: scroll;
+      }
+      aside {
+        background-color: #e9ecef;
+      }
+      button {
+        display: inline-block;
+        font-size: 16px;
+        background-color: #5f3dc4;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        padding: 8px 12px;
+        font-weight: bold;
+      }
+      button:last-child {
+        background-color: red;
+        margin-left: auto;
+      }
+      .email {
+        color: white;
+        background-color: #adb5bd;
+        height: 96px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark Unread</button>
+      <button>Read</button>
+      <button>Trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+      <div class="email">Email 1</div>
+    </section>
+    <main>Email View</main>
+    <aside>Additional info</aside>
+  </body>
+</html>
