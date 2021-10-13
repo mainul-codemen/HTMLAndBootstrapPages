@@ -306,17 +306,281 @@ body {
   margin-bottom: 3rem;
 }
 /**************************/
-/* TESTIMONIALS SECTION */
+/* FEATURED SECTION */
 /**************************/
+.section-featured{
+  padding: 4.6rem 0 3.2rem 0; 
+  filter: brightness(0);
+  opacity: 50%;
+}
+.heading-featured-in{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #999;
+
+}
+.logos{
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  
+}
+.logos img{
+  height: 3.2rem;
+
+}
 
 /**************************/
 /* MEALS SECTION */
 /**************************/
 
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal{
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  
+
+}
+.meal-content{
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.tag{
+  display: inline-block;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #000;
+  border-radius: 100px;
+  
+}
+.tag--vegetarian{
+  background-color: #51cf66;
+}
+
+.tag--vegan{
+  background-color: #0aec2f;
+}
+
+
+.tag--paleo{
+  background-color: #e4d503;
+}
+
+
+
+.meal-tags{
+  margin-bottom: 12px;
+  display: flex;
+  gap: 0.4rem;
+}
+
+
+.meal-title{
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+
+}
+
+.meal-attributes{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.meal-attribute{
+  font-size: 1.8rem;
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+
+}
+
+.meal-img{
+  width: 100%;
+}
+
+.meal-icon{
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+  
+}
+
+strong{
+  font-weight: 500;
+}
+
 /**************************/
 /* CTA SECTION */
 /**************************/
+.list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+}
+
+.list-icon{
+  width: 3rem;
+  height: 3rem;
+  color:#e67e22;
+
+}
+.list-item{
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.margin-bottom-md{
+  margin-bottom: 4.8rem !important
+}
+
+.all-recipes{
+  text-align: center;
+  font-size: 1.8rem;
+
+}
+
+.link:link,
+.link:visited{
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: underline;
+  border-bottom: 1px sloid currentColor;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+
+}
+
+.link:hover,
+.link:active{
+  color: #cf711f;
+}
+
+.meal:hover{
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06);
+}
 
 /**************************/
-/* FOOTER */
-/**************************/ ;
+/* TESTIMONIALS SECTION */
+/**************************/
+.section-testimonials{
+  background-color: #fdf2e9;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+.testimonial-container{
+  padding: 9.6rem;
+}
+.testimonials{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img{
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text{
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name{
+  font-size: 1.6rem;
+  color: #777;
+}
+
+/**************************/
+/* Gallery */
+/**************************/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+  padding: 4.8rem;
+  
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
+
+/**************************/
+/* PRICING */
+/**************************/
+.section-pricing{
+  padding: 9.6rem 0;
+
+}
+
+.pricing-plan{
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  column-gap: 5rem;
+  text-align: center; */
+  background-color: #fdf2e9;
+  border-radius: 11px;
+  padding: 4.8rem;
+    
+}
+
+.plan-name{
+  font-size: 1.6rem;
+  letter-spacing: 0.75;
+  color:#cf711f;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  font-weight: 600;
+}
+
+.plan-price{
+  font-size: 6.5rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  color:#333;
+}
+
+.plan-des{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.pricing-plan{
+  background-color:#fdf2e9;
+  border-radius: 11px;
+  padding: 4.8rem;
+}
+
+
+.plan-signup{
+  text-align: center;
+}
+
+.plan-header{
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
